@@ -1,0 +1,193 @@
+%++++++++++++++++++++++++++++++++++++++++
+% Don't modify this section unless you know what you're doing!
+\documentclass[letterpaper,11pt]{article}
+\usepackage{natbib}
+\bibliographystyle{unsrtnat}
+\usepackage{tabularx} % extra features for tabular environment
+\usepackage{amsmath}  % improve math presentation
+\usepackage{graphicx} % takes care of graphic including machinery
+\usepackage[margin=1in,letterpaper]{geometry} % decreases margins
+%\usepackage{cite} % takes care of citations
+\usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
+\hypersetup{
+	colorlinks=true,       % false: boxed links; true: colored links
+	linkcolor=blue,        % color of internal links
+	citecolor=blue,        % color of links to bibliography
+	filecolor=magenta,     % color of file links
+	urlcolor=blue         
+}
+%+++++++++++++++++++++++++++++++++++++++
+\begin{document}
+
+\title{Calculus Based Physics \\\textbf{Title}}
+\author{Abrar Habib et. al.}
+\date{December 22, 2021}
+\maketitle
+
+\begin{abstract}
+TODO
+\end{abstract}
+
+\section{Introduction}
+
+(Sample only, note the functions in bold-facing, italics, etc.) \\In 1820, \textbf{Biot and Savart} conducted an experiment in ... [1]. 
+
+The \textit{Biot-Savart Law} is useful in ... [2].
+
+A \textcolor{blue}{Helmholtz coil} is a device for ... and was named after ... These coils were widely used in ... to produce \underline{uniform magnetic fields} ...
+
+The objective in this present lab is to ...
+
+\section{Theory}
+
+State, derive, and describe the important equations that you will 
+need to use to compare theory and experiment. Include diagrams as 
+necessary to help with visualizing variables. Leave mathematical d
+etails of your derivations on the Appendix section. Below is an 
+example to insert a numbered equation \ref{eq1} below
+
+\begin{equation} \label{eq1} % the label is used to reference the equation
+V=\frac{8\phi\Delta\pi a^{-5}}{\sqrt{3}\lambda\alpha\cdot\delta X \cdot\Sigma}+\nabla\vec{B}+\frac{\vec{E}}{\vec{v}}+\int \psi dL
+\end{equation}
+
+where $\psi$ is the distance to the Sun in units of km, $\lambda$ is something ... Always explain each variable once introduced. Do not introduce again at a later paragraph. 
+
+Example on how to insert an equation on a separate line, unnumbered:
+$$s_f=s_0+v_0t+\frac{1}{2}at^2$$
+or you can state equations or variables within the paragraph like this $v_f^2=v_i^2+2a\Delta s$ or variable $\xi$.
+
+\section{Methods}
+First, we set up the system. We cut a string of length [INSERT LENGTH] 
+and tied it to both our cart ($m_1$) and a spring. This spring was then 
+attached to a 100 g mass ($m_2$). After assembling the system, we set up
+the ramp. We propped one end of the ramp atop of two textbooks, creating 
+an inclined plane, and tuned the heights of the track's legs to adjust 
+the angle ($\Theta$) of the incline so the cart would remain stationary 
+when placed on it, achieving equilibrium. To finish setting up, we placed 
+two motion sensors to record the movements of the cart and the mass on 
+DataStudio, leaving us with a set-up resembling Fig. 1:
+\begin{figure}[htbp]
+    \centerline{\includegraphics[scale=.3]{lab4 art.png}}
+    \caption{The complete set-up of the system and inclined ramp, artistic liberties taken}
+\end{figure}
+
+Once everything was set up, we began our lab by monitoring the motion
+of the system. We set the cart into motion with a push and recorded
+roughly five seconds worth of data. Once we got a good graph of the
+motion on DataStudio, we chose eight moments to 
+analyze: t1 = 0 s, t2 = 0.24 s, t3 = 0.31 s, t4 = 0.45 s, t5 = 0.57 s, 
+t6 = 0.95 s, t7 = 1.68 s, and t8 = 2.6 s. Using the information from 
+these eight times, [and other stuff used in calculations], we were 
+able to determine quantities like x, y1, y2, Us, Total Ug, Total T, 
+and Total E.
+To determine the value of x, or the length of the spring, 
+we used the below equation:
+\begin{equation}
+    110.7-(m_1+m_2)
+\end{equation}
+where $m-1$ and $m_2$ are the length the cart has traveled and the length 
+the mass has travelled respectively.
+\\\\
+To determine the value of y1 and y2, or [what are they lol] we used the 
+below equation:
+\begin{equation}
+    x=y^2
+\end{equation}
+\\\\
+To determine the value of Us, or spring potential 
+energy, we used the below equation:
+\begin{equation}
+    x=y^2
+\end{equation}
+\\\\
+To determine the total value of Ug, or total gravitational potential energy, we used the below equation:
+\begin{equation}
+    x=y^2
+\end{equation}
+\\\\
+To determine the total value of T, or total kinetic energy, we used the below equation:
+\begin{equation}
+    x=y^2
+\end{equation}
+\\\\
+To determine the total value of E, or total energy, we used the below equation:
+\begin{equation}
+    x=y^2
+\end{equation}
+\\\\
+The value of Total E in particular is instrumental to our lab, as 
+we are assessing the system's conservation of energy or lack 
+thereof. After calculating the total at each of the eight 
+moments, we then compared the values and determined if they 
+were sufficiently similar enough to conclude that the energy 
+of the system was conserved.
+
+
+
+\section{Results and Analysis}
+
+Describe all your results after presenting them. Include tabulated data set, larger tables can also be presented on the Appendix. Here's an example to insert a table -  Table~\ref{table1} is below:
+
+\begin{table}[ht]
+\begin{center}
+\caption{Every table needs a caption. Note that the table caption is on top of the table! Note the consistency of precision of table values; do not forget the errors, labels, variables, and units.}
+\label{table1} 
+\begin{tabular}{ccc} %change to cc for 2 columns
+\hline
+\multicolumn{1}{c}{Distance, $d$ (km) } & \multicolumn{1}{c}{Voltage, $V\ (\pm 0.05$ V)} & \multicolumn{1}{c}{Current, $I$\ (mA $\pm 5$\%)}\\
+\hline
+1.2 $\pm$ 0.2 &  0.30 & 20 \\
+1.6 $\pm$ 0.4 &  0.21 & 30 \\
+2.5 $\pm$ 0.1 &  0.18 & 40 \\
+5.9 $\pm$ 0.2 &  0.13 & 50 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\textbf{Use a full page to present important plotted findings, \textcolor{red}{don't be shy!}}(See Appendix for e.g.). Your plots should have axes labels with units, error bars, legend, captions, etc.
+
+You can also discuss the sources of errors in this section; include ways on how you may want to improve the experimental methods performed. 
+
+
+
+\section{Conclusion}
+This section should be brief, concise, but complete. Directly answer 
+your objectives, state your findings with errors, and conclude 
+whether or not you were successful. Briefly explain if not successful.
+
+\begin{thebibliography}{99}
+
+\bibitem[\protect\citeauthoryear{Author}{2010}]{Author2010}
+Author, A.N and Another, A. N., 2010, MNRAS, 431, 28.
+
+\end{thebibliography}
+
+\appendix
+
+\section*{Appendix: Velocity measurements}
+
+Below is an example large table; include mathematical derivations here as well.
+\begin{table}[ht]
+\begin{center}
+\caption{Every table needs a caption.}
+\label{table2} 
+\begin{tabular}{cc} 
+\hline
+\multicolumn{1}{c}{distance (m)} & \multicolumn{1}{c}{V (km s$^-1$)} \\
+\hline
+0.0044151 &   0.0030871 \\
+0.0021633 &   0.0021343 \\
+0.0003600 &   0.0018642 \\
+0.0023831 &   0.0013287 \\
+0.0044151 &   0.0030871 \\
+0.0021633 &   0.0021343 \\
+0.0003600 &   0.0018642 \\
+0.0023831 &   0.0013287 \\
+0.0044151 &   0.0030871 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\end{document}
